@@ -1,0 +1,50 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "shortcut icon" type = "image/x-icon" href = "favicon.ico"  >
+    <div style="text-align: center; height: 120px; margin-top: 20px; font-weight: bold; font-family: Arial;color: rgb(37, 26, 26)">
+    <title>EARTHQUAKE API</title>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Lemon|Patua+One&display=swap" rel="stylesheet">
+
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="http://www.openlayers.org/api/OpenLayers.js"></script>
+</head>
+<body onload="getinfo()">
+     
+    <h1 style="text-align: center;text-transform: uppercase;color:text-shadow: 3px 3px rgb(77, 68, 68);font-size: 38px; padding: 20px; border-radius: 20px;box-shadow: 5px 5px 10px black;">EARTHQUAKES API 
+    	<a href=""><img class="slika"; src="slika1.png" style="height:60px; padding: 2px 4px;""></a> </h1>
+
+
+<section class="container" style="margin:0 auto; text-align: center; justify-content: center; align-items: center; font-family: 'Book Antiqua', Courie, monospace; ">
+    <p style="color:darkblue;border: 1px solid black;">COUNT:</p>
+    <p id= "count"></p>
+    <P style="color:darkblue;border: 1px solid black;">MAGNITUDE OF LAST EARTHQUAKE</P>
+    <p id="mag"></p>
+    <p style="color:darkblue;border: 1px solid black;">LOCATION OF LAST EARTHQUAKE</P>
+    <p id="location"></p>
+
+    <div id="mapdiv" style="height:450;"></div>
+   
+</section>
+    <form method="POST" action="logout.php">
+        <button class="btn btn-primary">Log out</button>
+    </form>
+    
+    
+    <script src="js.js"></script>
+
+    <style>
+        body {
+          background-color: lightsteelblue;
+        }
+        </style>
+</body>
+</html>
